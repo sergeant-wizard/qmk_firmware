@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  machine: true
+  build:
+    steps:
+      - checkout
+      - run:
+          name: build
+          command: docker run -e keymap=default -e keyboard=ergodox_ez --rm -v /home/ryo/qmk_firmware:/qmk:rw .
+      - store_artifacts:
+          path: .build/ergodox_ez_default.hex
