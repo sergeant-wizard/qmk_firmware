@@ -74,8 +74,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,-------------.
  *                                        |Animat|      |       |Toggle|Solid |
  *                                 ,------|------|------|       |------+------+------.
- *                                 |Bright|Bright|      |       |      |Hue-  |Hue+  |
- *                                 |ness- |ness+ |------|       |------|      |      |
+ *                                 |      |Bright|      |       |      |Hue-  |Hue+  |
+ *                                 | Del  |ness+ |------|       |------|      |      |
  *                                 |      |      |      |       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS, EPRM  ,KC_TRNS,KC_TRNS,KC_TRNS,
                                        RGB_MOD,KC_TRNS,
                                                KC_TRNS,
-                               RGB_VAD,RGB_VAI,KC_TRNS,
+                                KC_DEL,RGB_VAI,KC_TRNS,
        // right hand
        KC_TRNS, KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  KC_F11,
        KC_TRNS, KC_UP,   KC_7,   KC_8,    KC_9,    KC_UP,   KC_F12,
