@@ -26,14 +26,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  ]   |           |  =   |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  L1  | Ins  | Win  |  Alt |  Alt |                                       |  F20 | Down |   =  | ALT  |  L2  |
+ *   |  L1  | Ins  | Win  |  Alt |  Alt |                                       |  F13 |  F14 |   =  |  L2  |  L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        |Hyper |      |       |      | Meh  |
+ *                                        |Hyper |      |       | NUM1 | Meh  |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      | Home |       | PgUp |        |      |
+ *                                 |      |      | Home |       | NUM2 |        |      |
  *                                 | BS   | ESC  |------|       |------|  Enter |Space |
- *                                 |      |      | End  |       | PgDn |        |      |
+ *                                 |      |      | End  |       | NUM3 |        |      |
  *                                 `--------------------'       `----------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -53,10 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_BSLS,     KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,    KC_LBRC,
                           KC_H,   KC_J,  KC_K,   KC_L,   KC_SCLN, KC_QUOT,
              KC_EQL,      KC_N,   KC_M,  KC_COMM,KC_DOT, KC_SLSH, KC_RSFT,
-                                  KC_F20, KC_DOWN,KC_EQL, KC_RALT, MO(MDIA),
-             KC_TRNS,        MEH_T(KC_NO),
-             KC_PGUP,
-             KC_PGDN,KC_ENT, KC_SPC
+                                  KC_F13,KC_F14, KC_EQL, MO(MDIA), MO(SYMB),
+             KC_P7,        MEH_T(KC_NO),
+             KC_P8,
+             KC_P9, KC_ENT, KC_SPC
     ),
 /* Keymap 1: Symbol Layer
  *
